@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_background"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    tools:context=".activity.CadastroActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/butcherman"
+        android:text="Wesleyfreelancer"
+        android:textColor="@color/white"
+
+        android:textSize="26dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="6dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/background_texto"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"
+        android:drawablePadding="6dp"
+        android:drawableLeft="@drawable/ic__email"
+        android:background="@drawable/background_texto"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress|textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/background_texto"
+        android:hint="Senha"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="6dp"
+        android:layout_marginBottom="15dp"
+        android:inputType="textPersonName|textPassword" />
+
+    <Button
+        android:id="@+id/buttonCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_botao"
+        android:onClick="validarCampos"
+        android:text="Cadastrar" />
+
+</LinearLayout>
